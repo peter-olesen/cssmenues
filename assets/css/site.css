@@ -1,5 +1,83 @@
 /* write cool CSS here */
+
+/* navOne */
+
+#navOne ul {
+  list-style-type: none;
+}
+
+#navOne li {
+  margin-bottom: 10px;
+  padding: 5px;
+  display: inline-block;
+  margin-right: 15px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+#navOne li:hover {
+  background-color: #f0f0f0;
+  color: #000;
+}
+
+/* navTwo */
+
+#navTwo a {
+  color: #000;
+  text-decoration: none;
+}
+
+#navTwo ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#navTwo ul ul {
+  display: none;
+  position: absolute;
+}
+
+#navTwo ul ul li {
+  display: block;
+  position: relative;
+  padding: 10px;
+}
+
+#navTwo ul ul li:hover {
+  background: red;
+}
+
+#navTwo ul li:hover > ul {
+  display: block;
+}
+
+#navTwo ul li {
+  display: inline-block;
+}
+
+#navTwo ul li h4 {
+  display: inline-block;
+  cursor: pointer;
+  margin: 0;
+}
+
+/* navThree */
+
 #navIcon {
   max-width: 40px;
   cursor: pointer;
+}
+
+#navThree input {
+  display: none;
+}
+
+#burgerMenuItems {
+  display: none;
+  padding: 0;
+  list-style: none;
+}
+
+#navThree input:checked ~ #burgerMenuItems {
+  display: block;
 }
