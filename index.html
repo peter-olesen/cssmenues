@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <link rel="shortcut icon" href="#">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/site.css">
+    <script src="assets/js/site.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>CSS Menues</h1>
+    </header>
+    <nav id="navOne">
+        <ul>
+            <li><a href="#">option 1</a></li>
+            <li><a href="#">option 2</a></li>
+            <li><a href="#">option 3</a></li>
+            <li><a href="#">option 4</a></li>
+        </ul>
+    </nav>
+
+
+    <nav id="navTwo">
+        <ul>
+            <li>
+                <h4>options 1</h4>
+                <ul>
+                    <li><a href="#">option 1</a></li>
+                    <li><a href="#">option 2</a></li>
+                    <li><a href="#">option 3</a></li>
+                    <li><a href="#">option 4</a></li>
+                </ul>
+            </li>
+            <li>
+                <h4>options 2</h4>
+                <ul>
+                    <li><a href="#">option 1</a></li>
+                    <li><a href="#">option 2</a></li>
+                    <li><a href="#">option 3</a></li>
+                    <li><a href="#">option 4</a></li>
+                </ul>
+            </li>
+            <li><a href="#">option 3</a></li>
+            <li>
+                <h4>options 4</h4>
+                <ul>
+                    <li><a href="#">option 1</a></li>
+                    <li><a href="#">option 2</a></li>
+                    <li><a href="#">option 3</a></li>
+                    <li><a href="#">option 4</a></li>
+                </ul>
+            </li>
+        </ul>
+
+    </nav>
+
+    <nav id="navThree">
+        <input type="checkbox" name="menu" id="menuCheckBox">
+        <label for="menuCheckBox"><img id="navIcon" src="assets/img/burger-menu.svg" alt="navigation icon"></label>
+
+
+        <ul id="burgerMenuItems">
+            <li><a href="#">option 1</a></li>
+            <li><a href="#">option 2</a></li>
+            <li><a href="#">option 3</a></li>
+            <li><a href="#">option 4</a></li>
+        </ul>
+    </nav>
+
+
+    <main>
+        <h2>Lidt om CSS til menus</h2>
+        <p>At style ubestemte lister (ul) og listeelementer (li) med HTML og CSS er en grundlæggende del af webdesign,
+            der giver
+            udviklere mulighed for at skabe visuelt tiltalende og brugervenlige navigationsskranke. Ved at udnytte
+            kraften i
+            cascading style sheets (CSS) kan designere tilpasse udseendet af disse elementer for at forbedre det samlede
+            udseende og
+            fornemmelse af en hjemmeside.
+
+            For at begynde er det afgørende at forstå strukturen af ubestemte lister. Ul-elementet repræsenterer en
+            ubestemt liste,
+            og hvert listeelement er angivet ved li-elementet indlejret i ul. Denne hierarkiske ordning giver et
+            grundlag for at
+            skabe organiserede og æstetisk tiltalende menuer.
+
+            CSS spiller en afgørende rolle i at style disse elementer. Vælgere bruges til at målrette specifikke
+            elementer, og
+            egenskaber definerer deres udseende. For ul- og li-elementer inkluderer almindelige egenskaber
+            list-style-type, margin
+            og padding. Egenskaben list-style-type styrer udseendet af markøren for listeobjektet og tillader designere
+            at vælge
+            mellem disk, firkant eller ingen, afhængigt af det ønskede visuelle effekt.
+
+            For eksempel, for at fjerne standard punkttegn fra en liste, kan man bruge følgende CSS-regel:
+        <pre>
+    <code>
+        css
+        ul {
+        list-style-type: none;
+        }
+    </code>
+</pre>
+
+        Yderligere kan justering af margin- og padding-egenskaber hjælpe med at skabe afstand mellem listeelementer
+        og forbedre
+        læsbarheden og det visuelle udtryk:
+
+        <pre>
+           <code>
+            css
+        li {
+        margin-bottom: 10px;
+        padding: 5px;
+        }
+    </code>   
+        </pre>
+
+
+        At skabe vandrette navigationsmenuer indebærer ofte at indstille displayegenskaben for li-elementer til
+        inline eller
+        inline-block. Dette transformerer den standard lodrette liste til en vandret navigationsbjælke:
+
+        <pre>
+            <code>
+            css
+            
+            li {
+            display: inline-block;
+            margin-right: 15px;
+            }
+            </code>
+        </pre>
+
+        Designere kan yderligere forbedre brugeroplevelsen ved at inkorporere hover-effekter. Dette kan opnås ved at
+        bruge
+        pseudo-klassen :hover til at ændre udseendet af listeobjekter, når brugerne svæver over dem. For eksempel:
+
+        <pre>
+            <code>
+            css
+            li:hover {
+            background-color: #f0f0f0;
+            color: #333;
+            }
+            </code>
+        </pre>
+        For at tilføje en sidste detalje kan overgange anvendes for at skabe glidende animationer mellem forskellige
+        tilstande
+        og give en poleret og professionel fornemmelse:
+
+        <pre>
+
+            <code>
+                
+            </code>
+            css
+            li {
+            transition: background-color 0.3s, color 0.3s;
+            }
+            </code>
+        </pre>
+        Sammenfattende muliggør styling af ul- og li-elementer med HTML og CSS, at webdesignere kan skabe
+        velorganiserede og
+        visuelt tiltalende navigationsskranke. Ved at forstå strukturen af ubestemte lister og anvende
+        CSS-egenskaber effektivt
+        kan udviklere tilpasse udseendet, afstanden og interaktiviteten af menuer og bidrage til en positiv
+        brugeroplevelse på
+        en hjemmeside.</p>
+    </main>
+
+</body>
+
+</html>
